@@ -1,0 +1,55 @@
+.custom-shape-divider-top-1695021609 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1695021609 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1695021609 .shape-fill {
+    fill: #1f1f1f;
+}
+path:last-child {
+    animation: move alternate 20s infinite linear;
+}
+path:first-child {
+    animation: move2 alternate 20s infinite linear;
+}
+path:nth-child(2) {
+    animation: move3 alternate 20s infinite linear;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translate(-50%);
+    }
+}
+
+@keyframes move2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translate(-70%);
+    }
+}
+
+@keyframes move1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translate(-90%);
+    }
+}
