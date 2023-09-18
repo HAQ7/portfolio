@@ -534,8 +534,16 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -550,24 +558,44 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.w-\[125px\] {
+  width: 125px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[40px\] {
+  width: 40px;
 }
 
 .w-screen {
   width: 100vw;
 }
 
-.w-\[530px\] {
-  width: 530px;
+.w-\[220px\] {
+  width: 220px;
 }
 
-.w-\[200px\] {
-  width: 200px;
+.w-\[230px\] {
+  width: 230px;
 }
 
-.w-\[500px\] {
-  width: 500px;
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-2 {
@@ -582,8 +610,8 @@ video {
   flex-direction: column;
 }
 
-.content-center {
-  align-content: center;
+.place-items-center {
+  place-items: center;
 }
 
 .items-center {
@@ -594,40 +622,45 @@ video {
   justify-content: center;
 }
 
-.justify-around {
-  justify-content: space-around;
+.gap-10 {
+  gap: 2.5rem;
 }
 
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
+.gap-32 {
+  gap: 8rem;
 }
 
 .gap-4 {
   gap: 1rem;
 }
 
-.bg-zinc-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+.gap-5 {
+  gap: 1.25rem;
 }
 
-.bg-zinc-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.bg-stone-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(12 10 9 / var(--tw-bg-opacity));
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
-.bg-zinc-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(9 9 11 / var(--tw-bg-opacity));
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -640,92 +673,67 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-5 {
-  padding: 1.25rem;
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
-.p-7 {
-  padding: 1.75rem;
+.from-black {
+  --tw-gradient-from: #000 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
+.to-neutral-800 {
+  --tw-gradient-to: #262626 var(--tw-gradient-to-position);
 }
 
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-\[1\.3em\] {
+  font-size: 1.3em;
 }
 
-.text-\[10em\] {
-  font-size: 10em;
+.text-\[1\.5em\] {
+  font-size: 1.5em;
 }
 
-.text-\[5em\] {
-  font-size: 5em;
+.text-\[2\.8em\] {
+  font-size: 2.8em;
 }
 
-.text-\[3em\] {
-  font-size: 3em;
+.text-\[1\.1em\] {
+  font-size: 1.1em;
 }
 
-.text-\[4em\] {
-  font-size: 4em;
+.text-\[21em\] {
+  font-size: 21em;
 }
 
-.text-\[1em\] {
-  font-size: 1em;
+.text-\[2\.1em\] {
+  font-size: 2.1em;
 }
 
-.text-\[2em\] {
-  font-size: 2em;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-\[2\.5em\] {
+  font-size: 2.5em;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .font-thin {
   font-weight: 100;
 }
 
-.font-extralight {
-  font-weight: 200;
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
-.leading-5 {
-  line-height: 1.25rem;
-}
-
 .leading-7 {
   line-height: 1.75rem;
-}
-
-.leading-9 {
-  line-height: 2.25rem;
-}
-
-.leading-10 {
-  line-height: 2.5rem;
-}
-
-.leading-normal {
-  line-height: 1.5;
 }
 
 .leading-tight {
@@ -737,8 +745,50 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 @media (min-width: 640px) {
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .sm\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .sm\:w-auto {
+    width: auto;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:justify-around {
+    justify-content: space-around;
+  }
+
+  .sm\:opacity-100 {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .lg\:text-\[2em\] {
+    font-size: 2em;
+  }
+
+  .lg\:text-\[4em\] {
+    font-size: 4em;
+  }
+
+  .lg\:leading-9 {
+    line-height: 2.25rem;
   }
 }

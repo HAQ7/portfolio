@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="dist/style.css" />
         <title>HAQ7</title>
     </head>
-    <body class="bg-black text-white">
-        <div class="custom-shape-divider-top-1695021609">
+    <body class="bg-black text-white overflow-x-hidden">
+        <div
+            class="custom-shape-divider-top-1695021609 sm:opacity-100 opacity-0"
+        >
             <svg
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,30 +34,92 @@
             </svg>
         </div>
         <section
-            class="flex justify-around sm:flex-row flex-col px-7 w-screen h-screen items-center"
+            class="flex sm:justify-around justify-center sm:flex-row flex-col gap-10 h-screen items-center"
         >
-            <div class="">
-                <h1 class="font-thin text-[4em] leading-tight">
+            <div>
+                <h1 class="font-thin lg:text-[4em] text-[2.8em] leading-tight">
                     My name is <br />
                     <span class="font-bold"
                         >Hussam <br />
                         AlQannam</span
                     >
                 </h1>
-                <h3 class="text-[2em] font-thin leading-10">
+                <h3
+                    class="lg:text-[2em] text-[1.5em] font-thin lg:leading-9 leading-7"
+                >
                     a King Saud University <br />
                     Software engineer student, <br />
                     and a front-end <span class="font-bold">dev.</span>
                 </h3>
             </div>
-            <div class="grid grid-cols-2 grid-rows-2 gap-4">
-                <div class="w-[200px] aspect-square bg-white"></div>
-                <div class="w-[200px] aspect-square bg-white"></div>
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:mt-0 mt-5">
+                <div
+                    class="cursor-pointer lg:w-[200px] w-[125px] aspect-square bg-white rounded-3xl bg-gradient-to-t from-black to-neutral-800 grid place-items-center"
+                >
+                    <span
+                        class="font-light lg:text-[2em] text-[1.3em] flex flex-col justify-center items-center"
+                        ><img
+                            src="dist/img/react.svg"
+                            alt=""
+                            srcset=""
+                        />Skills</span
+                    >
+                </div>
+                <div
+                    class="cursor-pointer lg:w-[200px] w-[125px] aspect-square bg-white rounded-3xl bg-gradient-to-t from-black to-neutral-800 grid place-items-center"
+                >
+                    <span
+                        class="font-light lg:text-[2em] text-[1.3em] flex flex-col justify-center items-center"
+                        ><img
+                            class="w-[40px] h-[40px] text-white"
+                            src="dist/img/project.svg"
+                            alt=""
+                            srcset=""
+                        />Projects</span
+                    >
+                </div>
                 <div class="flex justify-center items-center col-span-2">
                     <div
-                        class="w-[200px] aspect-square bg-white "
-                    ></div>
+                        class="cursor-pointer lg:w-[200px] w-[125px] aspect-square bg-white rounded-3xl bg-gradient-to-t from-black to-neutral-800 grid place-items-center"
+                    >
+                        <span
+                            class="font-light lg:text-[2em] text-[1.3em] flex flex-col justify-center items-center"
+                            ><img
+                                class="w-[40px] h-[40px] text-white"
+                                src="dist/img/contact.svg"
+                                alt=""
+                                srcset=""
+                            />Contact me</span
+                        >
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- circle Section ========================================================= -->
+
+        <section
+            class="flex sm:justify-around justify-center h-screen sm:flex-row flex-col gap-10 items-center"
+        >
+            <div
+                class="rounded-full aspect-square border-white border-2 grid place-items-center sm:w-[500px] w-[250px]"
+            ></div>
+
+            <div>
+                <h1 class="font-thin lg:text-[4em] text-[2.8em] leading-tight">
+                    <span class="font-bold">Skills</span> i know, <br />
+                    and the <br>
+                    <span class="font-bold">Tools</span> i use.
+                </h1>
+                <h3
+                    class="lg:text-[2em] text-[1.3em] font-thin lg:leading-9 leading-7"
+                >
+                    skills and tools i need to<br />
+                    design and develop sites.<br /><br>
+                    where the tools that i have <br>
+                    more experience with, are <br>
+                    closer to the middle.
+                </h3>
             </div>
         </section>
     </body>
