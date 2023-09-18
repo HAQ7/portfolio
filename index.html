@@ -7,9 +7,9 @@
         <link rel="stylesheet" href="dist/style.css" />
         <title>HAQ7</title>
     </head>
-    <body class="bg-black text-white overflow-x-hidden">
+    <body class="bg-black text-white">
         <div
-            class="custom-shape-divider-top-1695021609 sm:opacity-100 opacity-0"
+            class="custom-shape-divider-top-1695021609 sm:opacity-100 opacity-0 absolute w-full"
         >
             <svg
                 data-name="Layer 1"
@@ -59,6 +59,7 @@
                     <span
                         class="font-light lg:text-[2em] text-[1.3em] flex flex-col justify-center items-center"
                         ><img
+                            class="w-[40px] aspect-square"
                             src="dist/img/react.svg"
                             alt=""
                             srcset=""
@@ -94,33 +95,167 @@
                     </div>
                 </div>
             </div>
+            <div
+                class="custom-shape-divider-top-1695021609 w-full absolute bottom-0 -rotate-180 sm:block hidden"
+            >
+                <svg
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25"
+                        class="shape-fill"
+                    ></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5"
+                        class="shape-fill"
+                    ></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill"
+                    ></path>
+                </svg>
+            </div>
         </section>
 
         <!-- circle Section ========================================================= -->
 
         <section
-            class="flex sm:justify-around justify-center h-screen sm:flex-row flex-col gap-10 items-center"
+            class="relative flex sm:justify-around justify-center sm:flex-row flex-col gap-10 items-center overflow-hidden py-10 bg-neutral-900"
         >
             <div
-                class="rounded-full aspect-square border-white border-2 grid place-items-center sm:w-[500px] w-[250px]"
-            ></div>
+                class="z-10 grid place-items-center lg:w-[550px] w-[250px] relative aspect-square"
+            >
+                <div
+                    class="rotateAnimation3 rounded-full aspect-square border-white border-2 grid place-items-center lg:w-[550px] w-[250px] absolute"
+                >
+                    <div
+                        class="antiRotateAnimation3 rounded-full aspect-square lg:w-16 w-8 border-white border cursor-pointer bg-black lg:-top-4 -top-2 lg:left-40 left-16 absolute overflow-hidden"
+                    >
+                        <img src="dist/img/react copy.svg" alt="" />
+                    </div>
+                    <div
+                        class="antiRotateAnimation3 rounded-full aspect-square lg:w-16 w-8 border-white border cursor-pointer bg-black lg:top-24 top-6 right-3 absolute overflow-hidden"
+                    >
+                        <img src="dist/img/git-svgrepo-com (1).svg" alt="" />
+                    </div>
+                </div>
 
-            <div>
+                <div class="w-0.5 h-full bg-white absolute -z-10"></div>
+                <div
+                    class="w-0.5 h-full bg-white absolute rotate-90 -z-10"
+                ></div>
+                <div
+                    class="rotateAnimation2 rounded-full aspect-square border-white border-2 grid place-items-center lg:w-[366.67px] w-[166.67px] absolute"
+                >
+                    <div
+                        class="antiRotateAnimation2 rounded-full aspect-square lg:w-16 w-8 border-white border cursor-pointer bg-black lg:top-8 top-2 right-3 absolute overflow-hidden"
+                    >
+                        <img src="dist/img/tailwind-svgrepo-com.svg" alt="" />
+                    </div>
+                    <div
+                        class="antiRotateAnimation2 rounded-full aspect-square lg:w-16 w-8 border-white border cursor-pointer bg-black lg:-left-6 -left-5 absolute overflow-hidden"
+                    >
+                        <img src="dist/img/figma-svgrepo-com.svg" alt="" />
+                    </div>
+                    <div
+                        class="antiRotateAnimation2 rounded-full aspect-square lg:w-16 w-8 border-white border cursor-pointer bg-black lg:bottom-10 bottom-2 right-1 absolute overflow-hidden"
+                    >
+                        <img
+                            src="dist/img/bootstrap-fill-svgrepo-com.svg"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div
+                    class="rotateAnimation rounded-full aspect-square border-white border-2 grid place-items-center lg:w-[183.34px] w-[83.33px] absolute"
+                >
+                    <div
+                        class="antiRotateAnimation rounded-full aspect-square lg:w-16 w-8 border-white border cursor-pointer bg-black lg:-top-6 -top-4 absolute overflow-hidden"
+                    >
+                        <img src="dist/img/js-svgrepo-com.svg" alt="" />
+                    </div>
+                    <div
+                        class="antiRotateAnimation rounded-full aspect-square lg:w-16 w-8 border-white border cursor-pointer bg-black -left-1 lg:bottom-1 -bottom-1 absolute overflow-hidden"
+                    >
+                        <img src="dist/img/css-3-svgrepo-com.svg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
                 <h1 class="font-thin lg:text-[4em] text-[2.8em] leading-tight">
                     <span class="font-bold">Skills</span> i know, <br />
-                    and the <br>
+                    and the <br />
                     <span class="font-bold">Tools</span> i use.
                 </h1>
                 <h3
                     class="lg:text-[2em] text-[1.3em] font-thin lg:leading-9 leading-7"
                 >
                     skills and tools i need to<br />
-                    design and develop sites.<br /><br>
-                    where the tools that i have <br>
-                    more experience with, are <br>
+                    design and develop sites.<br /><br />
+                    where the tools that i have <br />
+                    more experience with, are <br />
                     closer to the middle.
                 </h3>
             </div>
+        </section>
+        <div class="custom-shape-divider-top-1695021609 w-full sm:block hidden">
+            <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+            >
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25"
+                    class="shape-fill"
+                ></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5"
+                    class="shape-fill"
+                ></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"
+                ></path>
+            </svg>
+        </div>
+
+        <!-- =============Projects Section ========================================================= -->
+
+        <section
+            class="relative sm:flex-col flex justify-center items-center gap-0 h-screen overflow-hidden"
+        >
+            <div
+                class="flex flex-col justify-center items-center absolute z-10 top-10"
+            >
+                <img src="dist/img/project.svg" alt="" class="w-[60px]" />
+                <h1 class="font-thin lg:text-[2em] text-[1.3em]">
+                    <span class="font-bold">Projects</span> i have built
+                </h1>
+            </div>
+            <div
+                class="shapedividers_com-2649 h-screen w-32 sm:hidden block"
+            ></div>
+            <div class="h-screen w-60 bg-neutral-900 sm:hidden block"></div>
+            <div
+                class="shapedividers_com-1445 h-screen w-32 sm:hidden block"
+            ></div>
+
+            <div
+                class="shapedividers_com-4752 h-32 w-screen sm:block hidden"
+            ></div>
+            <div class="h-60 w-screen bg-neutral-900 sm:block hidden"></div>
+            <div
+                class="shapedividers_com-6672 h-32 w-screen sm:block hidden"
+            ></div>
         </section>
     </body>
 </html>
