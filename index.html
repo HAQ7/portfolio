@@ -5,13 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="dist/output.css" />
         <link rel="stylesheet" href="dist/style.css" />
+        <link rel="stylesheet" href="dist/intro.css">
         <title>HAQ7</title>
     </head>
-    <body class="bg-black text-white">
-        <div
-            class="custom-shape-divider-top-1695021609 sm:opacity-100 opacity-0 absolute w-full"
-        >
+    <body class="bg-black text-white overflow-hidden">
+        <div class="intro-background w-screen h-screen grid place-items-center absolute bg-black z-10">
+            <div class="bar sm:w-12 w-5 bg-neutral-700 absolute right-0"></div>
+            <div class="typewriter">
+                <h1 class="loading sm:text-[3em] text-[1.25em]">Loading...</h1>
+              </div>
+              <div class="typewriter absolute">
+                <h1 class="init opacity-0 sm:text-[3em] text-[1.25em]">initiating HAQ7.html</h1>
+              </div>
+        </div>
+        <div class="custom-shape-divider-top-1695021609 absolute w-full wave">
             <svg
+                class="sm:h-[150px] h-[50px]"
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1200 120"
@@ -36,7 +45,7 @@
         <section
             class="flex sm:justify-around justify-center sm:flex-row flex-col gap-10 h-screen items-center"
         >
-            <div>
+            <div class="title">
                 <h1 class="font-thin lg:text-[4em] text-[2.8em] leading-tight">
                     My name is <br />
                     <span class="font-bold"
@@ -52,9 +61,10 @@
                     and a front-end <span class="font-bold">dev.</span>
                 </h3>
             </div>
-            <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:mt-0 mt-5">
-                <div
-                    class="cursor-pointer lg:w-[200px] w-[125px] aspect-square bg-white rounded-3xl bg-gradient-to-t from-black to-neutral-800 grid place-items-center"
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:mt-0 mt-5 shortcut">
+                <a
+                    href="#skills"
+                    class="transition-all cursor-pointer lg:w-[200px] w-[125px] aspect-square bg-white rounded-3xl bg-gradient-to-t from-black to-neutral-800 grid place-items-center"
                 >
                     <span
                         class="font-light lg:text-[2em] text-[1.3em] flex flex-col justify-center items-center"
@@ -65,9 +75,10 @@
                             srcset=""
                         />Skills</span
                     >
-                </div>
-                <div
-                    class="cursor-pointer lg:w-[200px] w-[125px] aspect-square bg-white rounded-3xl bg-gradient-to-t from-black to-neutral-800 grid place-items-center"
+                </a>
+                <a
+                    href="#project"
+                    class="transition-all cursor-pointer lg:w-[200px] w-[125px] aspect-square bg-white rounded-3xl bg-gradient-to-t from-black to-neutral-800 grid place-items-center"
                 >
                     <span
                         class="font-light lg:text-[2em] text-[1.3em] flex flex-col justify-center items-center"
@@ -78,10 +89,11 @@
                             srcset=""
                         />Projects</span
                     >
-                </div>
+                </a>
                 <div class="flex justify-center items-center col-span-2">
-                    <div
-                        class="cursor-pointer lg:w-[200px] w-[125px] aspect-square bg-white rounded-3xl bg-gradient-to-t from-black to-neutral-800 grid place-items-center"
+                    <a
+                        href="#contact"
+                        class="transition-all cursor-pointer lg:w-[200px] w-[125px] aspect-square bg-white rounded-3xl bg-gradient-to-t from-black to-neutral-800 grid place-items-center"
                     >
                         <span
                             class="font-light lg:text-[2em] text-[1.3em] flex flex-col justify-center items-center"
@@ -92,13 +104,14 @@
                                 srcset=""
                             />Contact me</span
                         >
-                    </div>
+                    </a>
                 </div>
             </div>
             <div
-                class="custom-shape-divider-top-1695021609 w-full absolute bottom-0 -rotate-180 sm:block hidden"
+                class="custom-shape-divider-top-1695021609 w-full absolute bottom-0 -rotate-180 wave"
             >
                 <svg
+                    class="sm:h-[150px] h-[50px]"
                     data-name="Layer 1"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1200 120"
@@ -125,7 +138,8 @@
         <!-- circle Section ========================================================= -->
 
         <section
-            class="relative flex sm:justify-around justify-center sm:flex-row flex-col gap-10 items-center overflow-hidden py-10 bg-neutral-900"
+            id="skills"
+            class="relative flex sm:justify-around justify-center sm:flex-row flex-col gap-10 items-center overflow-hidden py-10 bg-neutral-900 sm:h-auto h-screen"
         >
             <div
                 class="z-10 grid place-items-center lg:w-[550px] w-[250px] relative aspect-square"
@@ -204,8 +218,11 @@
                 </h3>
             </div>
         </section>
-        <div class="custom-shape-divider-top-1695021609 w-full sm:block hidden">
+        <div
+            class="custom-shape-divider-top-1695021609 w-full sm:block hidden wave"
+        >
             <svg
+                class="h-[150px]"
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 1200 120"
@@ -231,31 +248,326 @@
         <!-- =============Projects Section ========================================================= -->
 
         <section
-            class="relative sm:flex-col flex justify-center items-center gap-0 h-screen overflow-hidden"
+            id="project"
+            class="relative sm:flex-col flex justify-center items-center gap-0 overflow-hidden"
         >
             <div
-                class="flex flex-col justify-center items-center absolute z-10 top-10"
+                class="flex flex-col justify-center items-center absolute z-10 sm:top-3 top-1"
             >
                 <img src="dist/img/project.svg" alt="" class="w-[60px]" />
-                <h1 class="font-thin lg:text-[2em] text-[1.3em]">
-                    <span class="font-bold">Projects</span> i have built
+                <h1
+                    class="font-thin sm:text-[3em] text-[2em] text-center sm:leading-tight leading-8"
+                >
+                    <span class="font-bold">Projects</span> i have <br />
+                    built.
                 </h1>
             </div>
             <div
                 class="shapedividers_com-2649 h-screen w-32 sm:hidden block"
             ></div>
-            <div class="h-screen w-60 bg-neutral-900 sm:hidden block"></div>
-            <div
-                class="shapedividers_com-1445 h-screen w-32 sm:hidden block"
-            ></div>
 
             <div
-                class="shapedividers_com-4752 h-32 w-screen sm:block hidden"
+                class="shapedividers_com-4752 h-32 w-screen sm:block hidden mt-56"
             ></div>
-            <div class="h-60 w-screen bg-neutral-900 sm:block hidden"></div>
+            <div
+                class="sm:h-60 sm:w-screen h-screen w-60 bg-neutral-900 flex sm:flex-row flex-col justify-center gap-16 items-center"
+            >
+                <div
+                    class="sm:w-60 w-40 sm:h-32 h-24 hover:sm:h-56 hover:h-44 rounded-3xl transition-all hoverAnimation flex flex-col justify-center items-center bg-[url('./img/gamesser.png')] bg-center relative overflow-hidden gap-5 shadow mt-28 sm:mt-0"
+                >
+                    <div
+                        class="absolute w-full h-full bg-gradient-to-t from-black to-transparent"
+                    ></div>
+                    <h1
+                        class="absolute font-thin sm:text-3xl text-xl leading-6 transition-all z-10"
+                    >
+                        Gamesser
+                    </h1>
+                    <p
+                        class="sm:text-lg text-xs text-center opacity-0 transition-opacity z-10"
+                    >
+                        a gussing game where you <br />
+                        try to guess the name of the game using little info.
+                    </p>
+                    <a
+                        href="https://haq7.github.io/Gamesser/"
+                        class="cursor-pointer grid place-items-center invisible rounded-3xl w-24 h-10 bg-neutral-800 hover:bg-neutral-600 transition-colors font-thin opacity-0 z-10"
+                    >
+                        View
+                    </a>
+                </div>
+                <div
+                    class="sm:w-60 w-40 sm:h-32 h-24 hover:sm:h-56 hover:h-44 rounded-3xl transition-all hoverAnimation flex flex-col justify-center items-center bg-[url('./img/keytap.png')] bg-top relative overflow-hidden gap-5 shadow"
+                >
+                    <div
+                        class="absolute w-full h-full bg-gradient-to-t from-black to-transparent"
+                    ></div>
+                    <h1
+                        class="absolute font-thin sm:text-3xl text-xl leading-6 transition-all z-10"
+                    >
+                        KeyTab
+                    </h1>
+                    <p
+                        class="sm:text-lg text-xs text-center opacity-0 transition-opacity z-10"
+                    >
+                        a chrome extinction that enables you to reach your
+                        websites faster and easier.
+                    </p>
+                    <a
+                        href="https://chrome.google.com/webstore/detail/keytab/giflgblfmoeilnlakmjobjfnoklklbcm"
+                        class="cursor-pointer grid place-items-center invisible bottom-4 rounded-3xl w-24 h-10 bg-neutral-800 hover:bg-neutral-600 transition-colors font-thin opacity-0 z-10"
+                    >
+                        View
+                    </a>
+                </div>
+                <div
+                    class="sm:w-60 w-40 sm:h-32 h-24 hover:sm:h-56 hover:h-44 rounded-3xl transition-all hoverAnimation flex flex-col justify-center items-center bg-[url('./img/aimless.png')] bg-center relative overflow-hidden gap-5 shadow"
+                >
+                    <div
+                        class="absolute w-full h-full bg-gradient-to-t from-black to-transparent"
+                    ></div>
+                    <h1
+                        class="text-center absolute font-thin sm:text-3xl text-xl leading-6 transition-all z-10"
+                    >
+                        Aimless Pigeon
+                    </h1>
+                    <p
+                        class="sm:text-lg text-xs text-center opacity-0 transition-opacity z-10"
+                    >
+                        a flappy bird like game <br />
+                        where you try and get a high score.
+                    </p>
+                    <a
+                        href="https://haq7.github.io/aimless-pigeon/"
+                        class="cursor-pointer grid place-items-center /invisible bottom-4 rounded-3xl w-24 h-10 bg-neutral-800 hover:bg-neutral-600 transition-colors font-thin opacity-0 z-10"
+                    >
+                        View
+                    </a>
+                </div>
+            </div>
             <div
                 class="shapedividers_com-6672 h-32 w-screen sm:block hidden"
             ></div>
+            <div
+                class="shapedividers_com-1445 h-screen w-32 sm:hidden block"
+            ></div>
+        </section>
+
+        <!-- =============Contact Section ========================================================= -->
+        <section
+            id="contact"
+            class="relative flex flex-col justify-start items-center h-screen sm:pt-10 pt-20"
+        >
+            <div
+                class="absolute top-0 shapedividers_com-6672 v2 h-32 w-screen sm:hidden block"
+            ></div>
+
+            <div class="flex flex-col gap-4 ">
+                <div
+                    class="flex flex-col justify-center items-center z-10 w-full rounded p-2"
+                >
+                    <img src="dist/img/contact.svg" alt="" class="w-[60px]" />
+                    <h1
+                        class="font-thin sm:text-[3em] text-[2em] text-center sm:leading-tight leading-8"
+                    >
+                        <span class="font-bold">Contact</span> me.
+                    </h1>
+                </div>
+                <div>
+                    <h2 class="text-[1.5em] sm:text-[2em] font-thin ms-5">
+                        Email
+                    </h2>
+                    <div
+                        class="flex bg-neutral-900 text-center rounded-3xl items-center justify-center"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="w-6 h-6 sm:w-7 sm:h-7 mx-4 my-2"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                            />
+                        </svg>
+
+                        <p
+                            class="sm:text-2xl py-4 px-8 border-l-white border-l text-sm"
+                        >
+                            hussam.a.qannam@gmail.com
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-[1.5em] sm:text-[2em] font-thin ms-5">
+                        Whatsapp
+                    </h2>
+                    <div
+                        class="flex bg-neutral-900 text-center rounded-3xl items-center"
+                    >
+                        <svg
+                            class="w-6 h-6 sm:w-7 sm:h-7 mx-4 my-2"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z"
+                                    fill="#ffffff"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z"
+                                    fill="#ffffff"
+                                ></path>
+                            </g>
+                        </svg>
+
+                        <p
+                            class="sm:text-2xl py-4 px-8 border-l-white border-l h-"
+                        >
+                            +966 550870073
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-[1.5em] sm:text-[2em] font-thin ms-5">
+                        Social media
+                    </h2>
+                    <a href="https://github.com/HAQ7"
+                        class="flex cursor-pointer bg-neutral-900 hover:bg-neutral-700 text-center rounded-t-3xl items-center"
+                    >
+                        <svg
+                            class="w-6 h-6 sm:w-7 sm:h-7 mx-4 my-2"
+                            viewBox="0 0 20 20"
+                            version="1.1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            fill="#ffffff"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <title>github [#ffffff]</title>
+                                <desc>Created with Sketch.</desc>
+                                <defs></defs>
+                                <g
+                                    id="Page-1"
+                                    stroke="none"
+                                    stroke-width="1"
+                                    fill="none"
+                                    fill-rule="evenodd"
+                                >
+                                    <g
+                                        id="Dribbble-Light-Preview"
+                                        transform="translate(-140.000000, -7559.000000)"
+                                        fill="#ffffff"
+                                    >
+                                        <g
+                                            id="icons"
+                                            transform="translate(56.000000, 160.000000)"
+                                        >
+                                            <path
+                                                d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                                                id="github-[#ffffff]"
+                                            ></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <p
+                            class="sm:text-2xl py-4 px-8 border-l-white border-l h-"
+                        >
+                            HAQ7
+                        </p>
+                    </a>
+                    <a
+                        class="flex cursor-pointer bg-neutral-900 hover:bg-neutral-700 text-center rounded-b-3xl items-center border-t border-t-white"
+                    >
+                        <svg
+                            class="w-6 h-6 sm:w-7 sm:h-7 mx-4 my-2"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g
+                                id="SVGRepo_tracerCarrier"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            ></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z"
+                                    fill="#ffffff"
+                                ></path>
+                                <path
+                                    d="M5 10C5 9.44772 5.44772 9 6 9H7C7.55228 9 8 9.44771 8 10V18C8 18.5523 7.55228 19 7 19H6C5.44772 19 5 18.5523 5 18V10Z"
+                                    fill="#ffffff"
+                                ></path>
+                                <path
+                                    d="M11 19H12C12.5523 19 13 18.5523 13 18V13.5C13 12 16 11 16 13V18.0004C16 18.5527 16.4477 19 17 19H18C18.5523 19 19 18.5523 19 18V12C19 10 17.5 9 15.5 9C13.5 9 13 10.5 13 10.5V10C13 9.44771 12.5523 9 12 9H11C10.4477 9 10 9.44772 10 10V18C10 18.5523 10.4477 19 11 19Z"
+                                    fill="#ffffff"
+                                ></path>
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z"
+                                    fill="#ffffff"
+                                ></path>
+                            </g>
+                        </svg>
+
+                        <p class="sm:text-2xl py-4 px-8 border-l-white border-l">
+                            Hussam Qannam
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="custom-shape-divider-top-1695021609 w-full absolute bottom-0 -rotate-180 wave"
+            >
+                <svg
+                    class="sm:h-[150px] h-[100px]"
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none"
+                >
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25"
+                        class="shape-fill"
+                    ></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5"
+                        class="shape-fill"
+                    ></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill"
+                    ></path>
+                </svg>
+            </div>
         </section>
     </body>
 </html>

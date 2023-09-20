@@ -1,3 +1,64 @@
+.shortcut > a {
+    transform: translateX(100vw);
+    animation: 1.5s 9s moveLeft forwards;
+}
+
+.shortcut > div a {
+    opacity: 0;
+    transform: translateY(100vh);
+    animation: moveUp 1.5s 9s forwards;
+}
+
+@keyframes moveUp {
+    to {
+        transform: translateY(0); opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    to {
+        transform: translateX(0); opacity: 1;
+    }
+}
+
+.title {
+    transform: translateX(-100vw);
+    animation: titleMove 1.5s 9s forwards;
+}
+
+@keyframes titleMove {
+    to {transform: translateX(0);}
+}
+
+.shortcut a:hover {
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    scale: 1.05;
+}
+
+.hoverAnimation {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hoverAnimation a {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.hoverAnimation:hover h1 {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.hoverAnimation:hover * {
+    opacity: 1;
+}
+
+.hoverAnimation:hover a {
+    visibility: visible;
+    transform: translateY(0);
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -23,7 +84,7 @@
     position: relative;
 }
 .shapedividers_com-2649::before {
-    animation: alternate infinite 20s bgMoveY;
+    animation: alternate linear infinite 20s bgMoveY;
     content: "";
     font-family: "shape divider from ShapeDividers.com";
     position: absolute;
@@ -44,7 +105,7 @@
     position: relative;
 }
 .shapedividers_com-1445::before {
-    animation: alternate infinite 20s bgMoveY;
+    animation: alternate linear infinite 20s bgMoveY;
     content: "";
     font-family: "shape divider from ShapeDividers.com";
     position: absolute;
@@ -65,7 +126,7 @@
     position: relative;
 }
 .shapedividers_com-4752::before {
-    animation: alternate infinite 20s bgMoveX;
+    animation: alternate linear infinite 20s bgMoveX;
     content: "";
     font-family: "shape divider from ShapeDividers.com";
     position: absolute;
@@ -91,7 +152,12 @@
     overflow: hidden;
     position: relative;
 }
+.shapedividers_com-6672.v2 {
+    overflow: hidden;
+    position: absolute;
+}
 .shapedividers_com-6672::before {
+    animation: alternate linear infinite 20s bgMoveX;
     content: "";
     font-family: "shape divider from ShapeDividers.com";
     position: absolute;
@@ -140,17 +206,16 @@
     position: relative;
     display: block;
     width: 300%;
-    height: 150px;
 }
 
 .custom-shape-divider-top-1695021609 .shape-fill {
     fill: #171717;
 }
-path:last-child {
-    animation: move alternate 20s infinite;
+.wave path:last-child {
+    animation: move alternate 20s infinite linear;
 }
-path:first-child {
-    animation: move2 alternate 20s infinite;
+.wave path:first-child {
+    animation: move2 alternate 20s infinite linear;
 }
 
 @keyframes move {
@@ -178,7 +243,7 @@ path:first-child {
     animation: rotateLong 70s infinite linear;
 }
 .rotateAnimation3 {
-    animation: rotateLong 70s infinite linear;
+    animation: rotateLong 100s infinite linear;
 }
 
 @keyframes rotateLong {
@@ -197,5 +262,5 @@ path:first-child {
     animation: rotateLong 70s infinite linear reverse;
 }
 .antiRotateAnimation3 {
-    animation: rotateLong 70s infinite linear reverse;
+    animation: rotateLong 100s infinite linear reverse;
 }
