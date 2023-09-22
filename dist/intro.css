@@ -25,7 +25,7 @@
 }
 
 .intro-background {
-    animation: opacity 0.5s 10.35s forwards;
+    animation: opacity 1s 10.35s forwards;
 }
 
 .waveTop {
@@ -45,7 +45,7 @@
 }
 
 body {
-    animation: overflow-off 1s 11.5s forwards;
+    animation: overflow-off 1s 11.75s forwards;
 }
 
 @keyframes overflow-off {
