@@ -63,21 +63,41 @@
     transform: translateY(50px);
     transition: 0.5s;
 }
-
-.hoverAnimation:hover h1 {
-    opacity: 0;
-    transform: translateY(-50px);
+@media (min-width: 767px) {
+    .hoverAnimation:hover h1 {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    
+    .hoverAnimation:hover * {
+        opacity: 1;
+    }
+    
+    .hoverAnimation:hover a {
+        visibility: visible;
+        transform: translateY(0);
+    }
 }
 
-.hoverAnimation:hover * {
-    opacity: 1;
-}
+@media (max-width: 767px) {
+    hoverAnimation:focus-within {
+        height: 11rem;
+    }
 
-.hoverAnimation:hover a {
-    visibility: visible;
-    transform: translateY(0);
+    .hoverAnimation:focus-within h1 {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    
+    .hoverAnimation:focus-within * {
+        opacity: 1;
+    }
+    
+    .hoverAnimation:focus-within a {
+        visibility: visible;
+        transform: translateY(0);
+    }
 }
-
 ::-webkit-scrollbar {
     width: 10px;
 }
