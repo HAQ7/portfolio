@@ -10,33 +10,33 @@
 }
 
 .loading {
-    animation: typing 3s steps(30, end) forwards,
+    animation: typing 1s steps(30, end) forwards,
         blink-caret 0.5s step-end 0s infinite,
-        typing 1s reverse 4s steps(30, end), disappear 0.1s 4.9s forwards;
+        typing 1s reverse 2s steps(30, end), disappear 0.1s 2.9s forwards;
 }
 .init {
-    animation: typing 3s steps(30, end) 5s forwards,
-        blink-caret 0.5s step-end 0s infinite;
+    animation: typing 1.5s steps(30, end) 3s forwards,
+        blink-caret 0.5s step-end infinite;
 }
 
 .bar {
     transform: translate(90vw);
-    animation: barHeight 1s 8.5s forwards, barMove 1s 9.5s forwards;
+    animation: barHeight 0.5s 4.5s forwards, barMove 0.5s 5s forwards;
 }
 
 .intro-background {
-    animation: opacity 1s 10.35s forwards;
+    animation: opacity 0.5s 5.5s forwards;
 }
 
 .waveTop {
     transform: translateY(-100%);
-    animation: curveMove 1.5s 10.5s forwards;
+    animation: curveMove 1s 5.5s forwards;
 }
 
 .waveBottom {
     rotate: -180deg;
     transform: translateY(-100%);
-    animation: curveMove 1.5s 10.5s forwards;
+    animation: curveMove 1s 5.5s forwards;
 }
 @keyframes curveMove {
     to {
@@ -45,15 +45,11 @@
 }
 
 body {
-    animation: overflow-off 1s 11.75s forwards;
+    animation: overflow-off 1s 5.5s forwards;
 }
 
 @keyframes overflow-off {
-    from {
-        overflow: hidden;
-    }
     to {
-        overflow-x: hidden;
         overflow-y: scroll;
     }
 }

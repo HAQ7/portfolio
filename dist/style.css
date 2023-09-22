@@ -1,12 +1,12 @@
-.shortcut > a {
+.shortcutAnimation > a {
     transform: translateX(100vw);
-    animation: 1.5s 10.5s backOriginX forwards;
+    animation: 1s 5.5s backOriginX forwards;
 }
 
-.shortcut > div a {
+.shortcutAnimation > div a {
     opacity: 0;
     transform: translateY(100vh);
-    animation: backOriginY 1.5s 10.5s forwards;
+    animation: backOriginY 1s 5.5s forwards;
 }
 
 @keyframes backOriginY {
@@ -40,13 +40,16 @@
 
 .title {
     transform: translateX(-100vw);
-    animation: titleMove 1.5s 10.5s forwards;
+    animation: titleMove 1s 5.5s forwards;
 }
 
 @keyframes titleMove {
     to {
         transform: translateX(0);
     }
+}
+.shortcut a {
+    transition: scale 0.15s, boxs;
 }
 
 .shortcut a:hover {

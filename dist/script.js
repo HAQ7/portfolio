@@ -2,6 +2,19 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 };
 
+if (document.cookie) {
+    document.querySelector(".intro-background").remove();
+    document.querySelector(".waveTop").classList.remove("waveTop");
+    document.querySelector(".waveBottom").classList.remove("waveBottom");
+    document.querySelector(".title").classList.remove("title");
+    document
+        .querySelector(".shortcutAnimation")
+        .classList.remove("shortcutAnimation");
+    document.body.classList.replace("overflow-hidden", "overflow-x-hidden");
+}
+
+document.cookie = `visited = true`;
+
 const skillsText = document.getElementById("skills-text");
 const projectText = document.getElementById("project-text");
 const contactText = document.getElementById("contact-text");
