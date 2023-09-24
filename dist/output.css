@@ -916,9 +916,9 @@ video {
   border-top-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-\[\#262626\] {
+.bg-\[hsl\(0\2c 0\%\2c 10\%\)\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+  background-color: hsl(0 0% 10% / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -939,16 +939,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[hsl\(0\2c 0\%\2c 50\%\)\] {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 50% / var(--tw-bg-opacity));
-}
-
-.bg-\[hsl\(0\2c 0\%\2c 10\%\)\] {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 10% / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/img\/aimless\.png\'\)\] {
@@ -973,24 +963,12 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-\[\#262626\] {
-  --tw-gradient-to: #262626 var(--tw-gradient-to-position);
+.to-\[hsl\(0\2c 0\%\2c 10\%\)\] {
+  --tw-gradient-to: hsl(0,0%,10%) var(--tw-gradient-to-position);
 }
 
 .to-transparent {
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
-}
-
-.to-\[\#b9b9b9\] {
-  --tw-gradient-to: #b9b9b9 var(--tw-gradient-to-position);
-}
-
-.to-\[hsl\(0\2c 0\%\2c 50\%\)\] {
-  --tw-gradient-to: hsl(0,0%,50%) var(--tw-gradient-to-position);
-}
-
-.to-\[hsl\(0\2c 0\%\2c 10\%\)\] {
-  --tw-gradient-to: hsl(0,0%,10%) var(--tw-gradient-to-position);
 }
 
 .bg-center {
